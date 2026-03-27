@@ -19,20 +19,20 @@ You will write SQL queries against a PostgreSQL database for **Levant Tech Solut
 2. **Create the database:**
 
    ```bash
-   psql -h localhost -U postgres -c "CREATE DATABASE lab3;"
+   psql -h localhost -U postgres -c "CREATE DATABASE levant_tech;"
    ```
 
 3. **Load the schema and seed data:**
 
    ```bash
-   psql -h localhost -U postgres -d lab3 -f schema.sql
-   psql -h localhost -U postgres -d lab3 -f seed_data.sql
+   psql -h localhost -U postgres -d levant_tech -f schema.sql
+   psql -h localhost -U postgres -d levant_tech -f seed_data.sql
    ```
 
 4. **Verify the data loaded:**
 
    ```bash
-   psql -h localhost -U postgres -d lab3 -c "SELECT COUNT(*) FROM employees;"
+   psql -h localhost -U postgres -d levant_tech -c "SELECT COUNT(*) FROM employees;"
    ```
 
    You should see `60`.
@@ -44,7 +44,7 @@ You will write SQL queries against a PostgreSQL database for **Levant Tech Solut
 3. **Test locally** before pushing:
 
    ```bash
-   psql -h localhost -U postgres -d lab3 -f queries.sql
+   psql -h localhost -U postgres -d levant_tech -f queries.sql
    ```
 
 4. See the full lab guide on GitHub Pages (linked in TalentLMS) for detailed requirements and expected output descriptions.
